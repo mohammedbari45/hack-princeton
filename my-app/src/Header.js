@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 function Header() {
   return (
     <header className="App-header">
+      <img src = "real_logo.png" alt = "Company Logo, titled Peyer, written by using different world currencies"></img>
       <h1>Company Name</h1>
       <nav>
         <ul>

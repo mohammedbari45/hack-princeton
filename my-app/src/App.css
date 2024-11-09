@@ -25,12 +25,15 @@
   color: white;
   position: sticky;
 }
-.App-header img{
-  
-
+/* Styles for the image */
+.image {
+  max-width: 1000px;           /* Limit image width (adjust as needed) */
+  height: auto;               /* Maintain aspect ratio */
+  margin-right: 2px;         /* Space between image and heading */
 }
+
 .App-header h1 {
-  margin-bottom: 0px;
+  margin-bottom: -100px;
   margin-top: 5px;
 }
 

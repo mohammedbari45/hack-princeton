@@ -26,6 +26,7 @@
   position: relative;
 }
 
+<<<<<<< HEAD
 .App-header h1 {
   margin-bottom: 0px;
   margin-top: 5px;
@@ -41,6 +42,8 @@
 }
 
 
+=======
+>>>>>>> b311bc36fd935a099b661e038b697b1ea79f039f
 nav ul {
   list-style-type: none;
   padding: 0;

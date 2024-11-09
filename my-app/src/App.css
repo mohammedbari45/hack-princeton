@@ -16,7 +16,7 @@
 .App-header {
   background-color: #55ad5b;
   height: 110px;
-  padding: 5px 5px;
+  padding: 5px 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,8 +25,9 @@
   color: white;
   position: sticky;
 }
+
 .App-header h1 {
-  margin-bottom: 5px;
+  margin-bottom: 0px;
   margin-top: 5px;
 }
 
@@ -62,6 +63,18 @@ nav ul li a:hover {
   to {
     transform: rotate(360deg);
   }
+}
+
+.profile-icon {
+  margin-left: auto;
+  margin-top: -50px; 
+  margin-right: 10px
+}
+
+.profile-icon img {
+  width: 40px;  
+  height: 40px;
+  border-radius: 0%;
 }
 
 img{

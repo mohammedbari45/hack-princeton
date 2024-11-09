@@ -4,6 +4,7 @@ import './App.css'; // Make sure to import your CSS file
 function Header() {
   return (
     <header className="App-header">
+      <img src = "real_logo.png" alt = "Company Logo, titled Peyer, written by using different world currencies"></img>
       <h1>Company Name</h1>
       <nav>
         <ul>

@@ -4,6 +4,7 @@ import './App.css';
 import Header from './Header';
 import HomePage from './Homepage';
 import CashbackPage from './CashbackPage';
+import HousingPage from './HousingPage'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/cashback" element={<CashbackPage />} />
+          <Route path="/housingpage" element={<HousingPage />} />
         </Routes>
       </div>
     </Router>

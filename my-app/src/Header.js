@@ -14,7 +14,6 @@ function Header() {
         <li><Link to="/expenses">Expenses</Link></li>
           <li><Link to="/cashback">Cashback</Link></li>
           <li><Link to="/housing">Housing</Link></li>
-          <li><Link to="/restaurants">Restaurants</Link></li>
         </ul>
       </nav>
       <div className="profile-icon">

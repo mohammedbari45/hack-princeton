@@ -15,7 +15,8 @@
 
 .App-header {
   background-color: #55ad5b;
-  height: 200px;
+  height: 110px;
+  padding: 5px 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,6 +24,10 @@
   font-size: 20px;
   color: white;
   position: sticky;
+}
+.App-header h1 {
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
 
 nav ul {

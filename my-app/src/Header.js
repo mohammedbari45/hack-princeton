@@ -13,6 +13,9 @@ function Header() {
           <li><a href="#restaurants">Restaurants</a></li>
         </ul>
       </nav>
+      <div className="profile-icon">
+        <img src="profile-icon.png" alt="Profile" />
+      </div>
     </header>
   );
 }

@@ -16,7 +16,7 @@
 .App-header {
   background-color: #55ad5b;
   height: 110px;
-  padding: 5px 5px;
+  padding: 10px 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,7 +26,7 @@
   position: sticky;
 }
 .App-header h1 {
-  margin-bottom: 5px;
+  margin-bottom: 0px;
   margin-top: 5px;
 }
 
@@ -62,4 +62,9 @@ nav ul li a:hover {
   to {
     transform: rotate(360deg);
   }
+}
+
+img{
+  width: 200px;
+  height: 200px;
 }

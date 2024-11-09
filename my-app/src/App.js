@@ -4,6 +4,7 @@ import './App.css';
 import Header from './Header';
 import HomePage from './Homepage';
 import CashbackPage from './CashbackPage';
+import HousingPage from './HousingPage'
 import Expenses from './Expenses'; 
 
 function App() {

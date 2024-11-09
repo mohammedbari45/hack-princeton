@@ -38,6 +38,11 @@
   position: absolute;
   bottom: 5px;  
   right: 10px; 
+  cursor: pointer;
+}
+
+.App-header .profile-icon :hover {
+  opacity: 0.8;
 }
 
 .App-header .real_logo {

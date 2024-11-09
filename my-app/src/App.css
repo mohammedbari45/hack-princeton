@@ -15,7 +15,7 @@
 
 .App-header {
   background-color: #55ad5b;
-  height: 150px;
+  height: 200px;
   padding: 5px 10px;
   display: flex;
   flex-direction: column;
@@ -26,7 +26,6 @@
   position: relative;
 }
 
-<<<<<<< HEAD
 .App-header h1 {
   margin-bottom: 0px;
   margin-top: 5px;
@@ -37,13 +36,16 @@
   height: 50px; 
   width: 50px;
   position: absolute;
-  bottom: 10px;  /* This will keep it at the bottom */
-  right: 10px;  /* Moves it to the bottom-right corner */
+  bottom: 10px;  
+  right: 10px; 
+}
+
+.App-header .real_logo {
+  height: 150px; 
+  width: 300px;
 }
 
 
-=======
->>>>>>> b311bc36fd935a099b661e038b697b1ea79f039f
 nav ul {
   list-style-type: none;
   padding: 0;

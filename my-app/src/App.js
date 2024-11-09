@@ -7,6 +7,7 @@ function App() {
     <div className="App">
       <Header />
       <main>
+        
         <h2>Because credit can be confusing.</h2>
       </main>
     </div>

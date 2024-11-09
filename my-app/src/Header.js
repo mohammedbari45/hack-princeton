@@ -11,6 +11,7 @@ function Header() {
           <li><a href="#cashback">Cashback</a></li>
           <li><a href="#housing">Housing</a></li>
           <li><a href="#restaurants">Restaurants</a></li>
+          <li><a href="#homepage">Homepage</a></li>
         </ul>
       </nav>
     </header>

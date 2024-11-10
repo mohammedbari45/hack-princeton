@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Papa from 'papaparse';
@@ -61,3 +62,5 @@ const CashbackPage = () => {
 >>>>>>> aa23a22d064e64f778d0fc9151227a75920f12cc
 
 export default CashbackPage;
+=======
+>>>>>>> 58a7ba829e25921ecddab7901f623b51da5a87f4

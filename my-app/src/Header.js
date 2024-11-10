@@ -18,7 +18,9 @@ function Header() {
         </ul>
       </nav>
       <div className="profile-icon">
-        <img className = "profile-icon" src="profile-icon.png" alt="Profile" />
+      <Link to="/profile"> 
+    <img className="profile-icon" src="profile-icon.png" alt="profile button" />
+  </Link>
       </div>
     </header>
   );

@@ -38,11 +38,17 @@
   position: absolute;
   bottom: 5px;  
   right: 10px; 
+  cursor: pointer;
+}
+
+.App-header .profile-icon :hover {
+  opacity: 0.8;
 }
 
 .App-header .real_logo {
   height: 100px; 
   width: 480px;
+  margin-bottom: 0px;
 }
 
 
@@ -55,7 +61,7 @@ nav ul {
 }
 
 nav ul li {
-  margin: 0 20px; 
+  margin: 0px 20px; 
 }
 
 nav ul li a {

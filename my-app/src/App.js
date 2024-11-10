@@ -8,15 +8,23 @@ import HousingPage from './HousingPage';
 import Expenses from './Expenses';
 import Classifier from './Classifier';
 
+
+
+import ProfilePage from './ProfilePage';
+
 function App() {
   return (
     <Router>
       <div className="App">
         <Header />
         <Routes>
-          <Route path="/homepage" element={<HomePage/>} />
+
+
+          <Route path="/" element={<HomePage/>} />
           <Route path="/expenses" element={<Expenses/>} />
           <Route path="/cashback" element={<CashbackPage/>} />
+          <Route path="/housingpage" element={<HousingPage />} />
+          <Route path="/profile" element={<ProfilePage />} />
           <Route path="/classifier" element={<Classifier/>} />
 
         </Routes>

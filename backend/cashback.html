@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cashback Offers</title>
+</head>
+<body>
+    <h1>Cashback Offers</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Card Name</th>
+                <th>Offer Details</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for card_name, offer_details in offers %}
+            <tr>
+                <td>{{ card_name }}</td>
+                <td>{{ offer_details }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

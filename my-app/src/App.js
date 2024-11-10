@@ -7,9 +7,6 @@ import CashbackPage from './CashbackPage';
 import HousingPage from './HousingPage';
 import Expenses from './Expenses';
 import Classifier from './Classifier';
-
-
-
 import ProfilePage from './ProfilePage';
 
 function App() {

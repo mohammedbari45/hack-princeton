@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState} from 'react';
 function Expenses() {
     <h2>This is the Expense Tracker Page</h2>;
 

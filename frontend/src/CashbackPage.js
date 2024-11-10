@@ -12,13 +12,19 @@ const CashbackPage = () => {
         try {
             setLoading(true);
             setError(null);
+    
+            // Optionally: First trigger a refresh
+            await axios.post('http://localhost:5000/cashback/refresh');
             
-            // Updated URLs to use port 5001
-            await axios.get('http://localhost:5001/scrape');
-            const response = await axios.get('http://localhost:5001/cashback');
+            // Then get the updated data
+            const response = await axios.get('http://localhost:5000/cashback');
             
-            setOffers(response.data);
-            setLastUpdate(new Date().toLocaleString());
+            if (response.data && Array.isArray(response.data)) {
+                setOffers(response.data);
+                setLastUpdate(new Date().toLocaleString());
+            } else {
+                setError('Invalid data format received.');
+            }
         } catch (err) {
             setError('Failed to fetch cashback offers. Please try again later.');
             console.error('Error:', err);
@@ -29,7 +35,7 @@ const CashbackPage = () => {
 
     useEffect(() => {
         fetchOffers();
-    }, []);
+    }, []); // Empty dependency array ensures this runs only once after the initial render
 
     return (
         <div className="cashback-container">
@@ -62,18 +68,37 @@ const CashbackPage = () => {
                 </div>
             )}
 
-            {!loading && !error && (
+            {!loading && !error && offers.length > 0 && (
                 <div className="offers-grid">
                     {offers.map((offer, index) => (
                         <div key={index} className="offer-card">
                             <h2>{offer.card_name}</h2>
-                            <p>{offer.offer_details}</p>
+                            <ul>
+                                {offer.offers.map((offerDetail, i) => (
+                                    <li key={i}>{offerDetail}</li>
+                                ))}
+                            </ul>
                         </div>
                     ))}
                 </div>
             )}
+
+            {!loading && !error && offers.length === 0 && (
+                <div className="no-offers">
+                    No cashback offers available at the moment.
+                </div>
+            )}
         </div>
     );
+};
+
+const checkStatus = async () => {
+    try {
+        const response = await axios.get('http://localhost:5000/cashback/status');
+        setLastUpdate(new Date(response.data.last_update).toLocaleString());
+    } catch (err) {
+        console.error('Status check failed:', err);
+    }
 };
 
 export default CashbackPage;

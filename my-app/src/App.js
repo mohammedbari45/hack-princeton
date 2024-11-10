@@ -4,8 +4,9 @@ import './App.css';
 import Header from './Header';
 import HomePage from './Homepage';
 import CashbackPage from './CashbackPage';
-import HousingPage from './HousingPage'
-import Expenses from './Expenses'; 
+import HousingPage from './HousingPage';
+import Expenses from './Expenses';
+import Classifier from './Classifier';
 
 function App() {
   return (
@@ -16,6 +17,8 @@ function App() {
           <Route path="/homepage" element={<HomePage/>} />
           <Route path="/expenses" element={<Expenses/>} />
           <Route path="/cashback" element={<CashbackPage/>} />
+          <Route path="/classifier" element={<Classifier/>} />
+
         </Routes>
       </div>
     </Router>

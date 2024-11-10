@@ -1,9 +1,9 @@
 {
   "dependencies": {
+    "@tensorflow/tfjs": "^4.22.0",
     "babel-loader": "^9.2.1",
     "react-scripts": "^5.0.1",
     "webpack": "^5.96.1",
     "webpack-cli": "^5.1.4"
-    
   }
 }

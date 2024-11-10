@@ -1,14 +1,12 @@
-<<<<<<< HEAD
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Papa from 'papaparse';
 
-<<<<<<< HEAD
+
 function CashbackPage() {
   return <h2>This is the Cashback Page</h2>;
 
 }
-=======
 const CashbackPage = () => {
   const [bonuses, setBonuses] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -59,8 +57,5 @@ const CashbackPage = () => {
     </div>
   );
 };
->>>>>>> aa23a22d064e64f778d0fc9151227a75920f12cc
 
 export default CashbackPage;
-=======
->>>>>>> 58a7ba829e25921ecddab7901f623b51da5a87f4

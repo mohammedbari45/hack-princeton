@@ -3,10 +3,10 @@ import axios from 'axios';
 import Papa from 'papaparse';
 
 
-function CashbackPage() {
-  return <h2>This is the Cashback Page</h2>;
+// function CashbackPage() {
+//   return <h2>This is the Cashback Page</h2>;
 
-}
+// }
 const CashbackPage = () => {
   const [bonuses, setBonuses] = useState([]);
   const [loading, setLoading] = useState(true);

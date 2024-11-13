@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "@tensorflow/tfjs": "^4.22.0",
+    "axios": "^1.7.7",
     "babel-loader": "^9.2.1",
     "react-scripts": "^5.0.1",
     "webpack": "^5.96.1",
